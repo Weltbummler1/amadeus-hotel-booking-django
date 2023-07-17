@@ -28,7 +28,7 @@ def demo(request):
         hotel_ids = []
         for i in hotel_list.data:
             hotel_ids.append(i['hotelId'])
-        num_hotels = 40
+        num_hotels = 50
         kwargs = {'hotelIds': hotel_ids[0:num_hotels],
             'checkInDate': request.POST.get('Checkindate'),
             'checkOutDate': request.POST.get('Checkoutdate')}
